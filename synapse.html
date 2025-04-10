@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-image: url('images/synapse-logo.png'); /* Ensure the image is in the images folder */
+            background-image: url('images/synapse-logo.png'); /* Ensure the image path is correct */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -143,7 +143,6 @@
         function showLoadstring() {
             const loadstring = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/SirCancer0/SynapseHub/main/SynapseHub.lua",true))()';
             
-            // Create temporary textarea to copy text
             const textarea = document.createElement('textarea');
             textarea.value = loadstring;
             document.body.appendChild(textarea);
